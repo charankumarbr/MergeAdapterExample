@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="@dimen/dp8">
+
+    <ImageView
+        android:id="@+id/lliIvImage"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_marginTop="@dimen/dp16"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="@dimen/dp16"/>
+
+    <TextView
+        android:id="@+id/lliTvTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/lliIvImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="@dimen/dp12"
+        android:layout_marginEnd="@dimen/dp16"
+        app:layout_constraintTop_toTopOf="@id/lliIvImage"
+        app:layout_constraintBottom_toBottomOf="@id/lliIvImage"
+        android:fontFamily="sans-serif"
+        android:textSize="@dimen/sp17"
+        android:textColor="@color/colorPrimary"/>
+
+    <TextView
+        android:id="@+id/lliTvInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="@dimen/dp16"
+        android:layout_marginEnd="@dimen/dp16"
+        android:layout_marginTop="@dimen/dp8"
+        app:layout_constraintTop_toBottomOf="@id/lliIvImage"
+        android:fontFamily="sans-serif"
+        android:textSize="@dimen/sp13"
+        app:layout_constraintHorizontal_bias="0"
+        android:textColor="@color/secondary_text"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

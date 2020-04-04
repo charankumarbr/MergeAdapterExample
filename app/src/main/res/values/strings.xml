@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MergeAdapterExample</string>
+    <string name="loading_data">Loading data...</string>
+    <string name="reached_end">You have reached the end of data.</string>
+</resources>

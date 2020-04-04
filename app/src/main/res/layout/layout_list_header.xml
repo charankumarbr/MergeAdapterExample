@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorAccent"
+    android:paddingBottom="@dimen/dp16">
+
+    <TextView
+        android:id="@+id/llhTvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/dp16"
+        android:layout_marginStart="@dimen/dp16"
+        android:layout_marginEnd="@dimen/dp16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:fontFamily="sans-serif"
+        android:textSize="@dimen/sp21"
+        android:textColor="@color/primary_text"/>
+
+    <TextView
+        android:id="@+id/llhTvSubTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/llhTvTitle"
+        android:layout_marginTop="@dimen/dp16"
+        android:layout_marginStart="@dimen/dp16"
+        android:layout_marginEnd="@dimen/dp16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:fontFamily="sans-serif"
+        android:textSize="@dimen/sp14"
+        android:textColor="@color/secondary_text"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
